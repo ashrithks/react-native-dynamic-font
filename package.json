@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-font",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Load font from file",
   "main": "index.js",
   "scripts": {

@@ -3,6 +3,30 @@ import { NativeModules } from 'react-native';
 
 const { ReactNativeDynamicFont } = NativeModules;
 
+function loadFont(name, data, type) {
+  if (!name)
+    throw new Error('Name is a required argument');
+
+  if (!data)
+    throw new Error('Data is a required argument');
+
+  /* Load font via native binary code */
+  return new Promise(function (resolve, reject) {
+    ReactNativeDynamicFont.loadFont({
+      name: name,
+      data: data,
+      type: type
+    }, function (err, givenName) {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve(givenName);
+    });
+  });
+}
+
+
 
 function loadFontFromFile(name, filePath) {
   if (!name)
@@ -26,5 +50,6 @@ function loadFontFromFile(name, filePath) {
 }
 
 module.exports = {
+  loadFont: loadFont,
   loadFontFromFile: loadFontFromFile
 }
