@@ -49,4 +49,4 @@ const loadFontFromFile = (name, filePath) => {
   });
 }
 
-export default { loadFont, loadFontFromFile }
+export { loadFont, loadFontFromFile }
