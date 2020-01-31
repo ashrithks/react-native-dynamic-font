@@ -1,0 +1,24 @@
+{
+  "name": "react-native-dynamic-font",
+  "version": "1.0.0",
+  "description": "Load font from file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "dynamic",
+    "font"
+  ],
+  "author": "ashrithks",
+  "license": "MIT License",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashrithks/rn-secure-store.git"
+  },
+  "peerDependencies": {
+    "react-native": "*",
+    "react-native-fs": "*"
+  }
+}
