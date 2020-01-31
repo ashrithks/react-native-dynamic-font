@@ -15,7 +15,7 @@
   "license": "MIT License",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashrithks/rn-secure-store.git"
+    "url": "git+https://github.com/ashrithks/react-native-dynamic-font.git"
   },
   "peerDependencies": {
     "react-native": "*",
