@@ -1,9 +1,11 @@
 {
   "name": "react-native-dynamic-font",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Load font from file",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "compile": "babel --source-maps -d lib/ src/",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +22,9 @@
   "peerDependencies": {
     "react-native": "*",
     "react-native-fs": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }

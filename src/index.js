@@ -3,7 +3,7 @@ import { NativeModules } from 'react-native';
 
 const { ReactNativeDynamicFont } = NativeModules;
 
-function loadFont(name, data, type) {
+const loadFont = (name, data, type) => {
   if (!name)
     throw new Error('Name is a required argument');
 
@@ -28,7 +28,7 @@ function loadFont(name, data, type) {
 
 
 
-function loadFontFromFile(name, filePath) {
+const loadFontFromFile = (name, filePath) => {
   if (!name)
     throw new Error('name is a required argument');
 
@@ -49,7 +49,4 @@ function loadFontFromFile(name, filePath) {
   });
 }
 
-module.exports = {
-  loadFont: loadFont,
-  loadFontFromFile: loadFontFromFile
-}
+export default { loadFont, loadFontFromFile }
