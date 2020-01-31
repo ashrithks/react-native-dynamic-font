@@ -21,7 +21,7 @@ RCT_EXPORT_METHOD(
     CFErrorRef error;
     CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)data);
     CGFontRef font = CGFontCreateWithDataProvider(provider);
-    NSString *newFontName = (__bridge NSString *)CGFontCopyPostScriptName(newFont);
+    NSString *newFontName = (__bridge NSString *)CGFontCopyPostScriptName(font);
     if (! CTFontManagerRegisterGraphicsFont(font, &error)) {
         CFStringRef errorDescription = CFErrorCopyDescription(error);
         NSLog(@"Failed to load font: %@", errorDescription);
