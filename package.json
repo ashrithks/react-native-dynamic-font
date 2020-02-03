@@ -1,7 +1,7 @@
 {
   "name": "react-native-dynamic-font",
-  "version": "1.0.7",
-  "description": "Load font from file",
+  "version": "1.0.8",
+  "description": "Load font from file and base64 string",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel --source-maps -d lib/ src/",
